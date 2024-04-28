@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+header {
+    width: 100%;
+    background-color: #164f70;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contTitleHeader {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+header nav {
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    
+}
+
+.menuButton {
+    font-size: 1.5rem;
+    display: none;
+}
+
+#navLinks ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#navLinks ul li {
+    list-style: none;
+}
+
+#navLinks ul li a {
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#navLinks ul li a:hover {
+    background-color: #fff;
+    border-radius: 50px;
+    color: #000;
+}
+
+main {
+    width: 95%;
+    display: flex;
+    margin: 2rem auto;
+    gap: 10px;
+}
+
+
+.aboutMe {
+    width: 70%;
+    border: 2px solid #dcdcdd;
+    border-radius: 10px 10px 0 0;
+}
+
+.devResources {
+    width: 30%;
+    border: 2px solid #dcdcdd;
+    border-radius: 10px 10px 0 0;
+}
+
+.devResources div {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #164f70;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+} 
+
+.infoMe {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+    gap: 1.3rem;
+}
+
+.infoMe img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.separator {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+    background-color: #164f70;
+    text-align: center;
+}
+
+#currentyear {
+    color: #fff;
+}
+
+#lastModified {
+    color: #b1e15b;
+}
+
+@media (max-width: 650px) {
+
+    .menuButton {
+        display: block;
+    }
+
+    #navLinks {
+        height: 0;
+        position: absolute;
+        top: 201px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    #navLinks.active {
+        height: 250px;
+    }
+
+    #navLinks ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    #navLinks.active ul {
+        opacity: 1;
+    }
+
+    #navLinks ul li {
+        margin-bottom: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        margin: 1rem auto;
+    }
+
+    .aboutMe {
+        width: 350px;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .infoMe {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .devResources {
+        width: 350px;
+        grid-row: 3 / 4;
+    }
+
+}

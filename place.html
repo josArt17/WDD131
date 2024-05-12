@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+        <nav>
+            <h1>Chichén Itzá</h1>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="cont-img">
+            <picture class="img">
+                <source srcset="images/chichen-itza-large.jpg" media="(min-width: 900px)">
+                <img src="images/chichen-itza.jpeg" alt="Picture of chichen itza">
+            </picture>
+        </div>
+        <div class="cont-data">
+            <div class="cont-title-data">
+                <div>
+                    <h2>Data</h2>
+                </div>
+            </div>
+            <div class="cont-table">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="table-title-row"><strong>Area:</td>
+                            <td class="table-data-row">25 km2</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Population:</strong></td>
+                            <td class="table-data-row">35,000</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Capital:</strong></td>
+                            <td class="table-data-row">Mérida, Yucatan</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Language:</strong></td>
+                            <td class="table-data-row">Mayan, Spanish</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Currency:</strong></td>
+                            <td class="table-data-row">MXN pesos</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Time zone:</strong></td>
+                            <td class="table-data-row">GMT-6</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Calling code:</strong></td>
+                            <td class="table-data-row">+900 - +999</td>
+                        </tr>
+                        <tr>
+                            <td class="table-title-row"><strong>Internet TLD: </strong></td>
+                            <td class="table-data-row">.mx</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="weather">
+            <div class="cont-weather">
+                <div>
+                    <h2>Weather</h2>
+                </div>
+                <div class="cont-icon-weather" id="cont-icon-weather">
+                    <img src="images/weather-icon.svg" alt="Icon weather">
+                </div>
+            </div>
+            <div id="cont-weather" class="cont-table-weather">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p id="currentyear"></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

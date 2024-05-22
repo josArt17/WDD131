@@ -63,6 +63,7 @@ header {
 }
 
 .nav-link:hover{
+    cursor: pointer;
     color: #000;
 }
 

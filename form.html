@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Form</title>
+</head>
+<body>
+    <header class="header">
+        <h1>
+            Product review
+        </h1>
+    </header>
+    <main class="main">
+        <form action="review.html" method="GET" id="reviewForm">
+            <div class="cont-select">
+                <label for="productName">Product Name</label>
+                <select name="productName" id="productName" required>
+                    <option value="" selected disabled>Select a Product...</option>
+                </select>
+            </div>
+            <div class="cont-rating">
+                <p>Overall Rating</p>
+                <div class="cont-star-rating">
+                    <label for="oneStar" class="labelOneStar">
+                        <i class="bi bi-star"></i>
+                    </label>
+                    <input type="radio" name="oneStar" id="oneStar">
+                    <label for="twostar" class="labeTwoStar">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </label>
+                    <input type="radio" name="twostar" id="twostar">
+                    <label for="theeStar" class="labeThreeStar">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </label>
+                    <input type="radio" name="theeStar" id="theeStar">
+                    <label for="fourStar" class="labeFourStar">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </label>
+                    <input type="radio" name="fourStar" id="fourStar">
+                    <label for="fiveStar" class="labeFiveStar">
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </label>
+                    <input type="radio" name="fiveStar" id="fiveStar">
+                </div>
+            </div>
+            <div class="cont-date">
+                <label for="dateInstall">Date of installation</label>
+                <input type="date" name="dateInstall" id="dateInstall">
+            </div>
+            <div class="cont-features">
+                <div>
+                    <p>Wich features did you find useful in the product?<br>(Check all that apply)</p>
+                </div>
+                <div class="cont-checkBox">
+                    <input type="checkbox" name="durability" id="durability">
+                    <label for="durability">Durability</label>
+                    <input type="checkbox" name="easeOfUse" id="easeOfUse">
+                    <label for="easeOfUse">Ease Of Use</label>
+                    <input type="checkbox" name="performance" id="performance">
+                    <label for="performance">Performance</label>
+                    <input type="checkbox" name="desing" id="desing">
+                    <label for="desing">Desing</label>
+                </div>
+            </div>
+            <div class="cont-review">
+                <label for="userReview">Written Review (Optional)</label>
+                <textarea name="userReview" id="userReview"></textarea>
+            </div>
+            <div class="cont-user-name">
+                <label for="userName">Your Name(Optional)</label>
+                <input type="text" name="userName" id="userName">
+            </div>
+            <div>
+                <input type="hidden" name="reviewCount" id="reviewCount">
+            </div>
+            <input type="submit" value="Post Review" id="submitButton">
+        </form>
+    </main>
+    <footer>
+        <p id="currentyear"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

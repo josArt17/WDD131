@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/travel.js" defer></script>
+    <title>Nacional travels</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul class="ul">
+                <li class="nav-element"><a href="index.html">Home</a></li>
+                <li class="nav-element"><a href="nacional.html">Nacional</a></li>
+                <li class="nav-element"><a href="international.html">International</a></li>
+            </ul>
+        </nav>
+        <div class="cont-logo">
+            <img src="images/travel_logo.png" alt="logo of page">
+        </div>
+    </header>
+    <main>
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/slideshow/beach-hotels.jpg">
+                        <img src="images/slideshow/beach-600.jpg" alt="Imagen 1">
+                    </picture>
+                    <div class="cont-button-reserve">
+                        <button id="CN800" class="button-reserve">Reserve</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/slideshow/hotels.jpg">
+                        <img src="images/slideshow/beach-sun-600.jpg" alt="Imagen 2">
+                    </picture>
+                    <div class="cont-button-reserve">
+                        <button id="AC800" class="button-reserve">Reserve</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="images/slideshow/zenote.jpg">
+                        <img src="images/slideshow/blue-600.jpg" alt="Imagen 3">
+                    </picture>
+                    <div class="cont-button-reserve">
+                        <button id="MR800" class="button-reserve">Reserve</button>
+                    </div>
+                </div>
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+        <div id="modal-container"></div>
+    </main>
+    <footer class="footer">
+        <div class="cont-footer-elements">
+            <div class="cont-footer-info">
+                <span>INFO</span>
+                <ul>
+                    <li><a href="">Principales destinos</a></li>
+                    <li><a href="">Playas mas visitadas</a></li>
+                    <li><a href="">Tips de viajeros</a></li>
+                </ul>
+            </div>
+            <div class="cont-footer-us">
+                <span>NOSOTROS</span>
+                <ul>
+                    <li><a href="">¿Quienes somos?</a></li>
+                    <li><a href="">Aviso de privacidad</a></li>
+                    <li><a href="">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="cont-footer-sMedia">
+                <span>Social media</span>
+                <ul>
+                    <li><i class="bi bi-whatsapp whats"></i></li>
+                    <li><i class="bi bi-facebook face"></i></li>
+                    <li><i class="bi bi-instagram insta"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

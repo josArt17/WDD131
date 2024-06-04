@@ -1,0 +1,43 @@
+@media(max-width: 600px){
+    .header {
+        min-width: 600px;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .main {
+        min-width: 600px;
+        height: 1200px;
+        background: url(../images/beach-600.jpg);
+        background-size: cover;
+    }
+
+    .nav-element {
+        font-size: 1rem;
+    }
+
+    .footer {
+        min-width: 600px;
+        height: 500px;
+    }
+
+    .cont-footer-elements {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .cont-button-reserve {
+        left: 40%;
+        bottom: 15%;
+    }
+
+    .modal-overlay {
+        position: absolute;
+    }
+
+    .modal-content {
+        max-width: 400px;
+    }
+}

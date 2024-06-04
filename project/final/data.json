@@ -1,0 +1,44 @@
+[
+    {
+        "place": "Disney Land",
+        "id": "DL800",
+        "amount": 79200,
+        "coin": "MXN",
+        "available": 40
+    },
+    {
+        "place": "London",
+        "id": "LN800",
+        "amount": 120900,
+        "coin": "MXN",
+        "available": 28
+    },
+    {
+        "place": "Paris",
+        "id": "PR800",
+        "amount": 143500,
+        "coin": "MXN",
+        "available": 18
+    },
+    {
+        "place": "Cancun",
+        "id": "CN800",
+        "amount": 50400,
+        "coin": "MXN",
+        "available": 18
+    },
+    {
+        "place": "Acapulco",
+        "id": "AC800",
+        "amount": 30800,
+        "coin": "MXN",
+        "available": 20
+    },
+    {
+        "place": "Merida",
+        "id": "MR800",
+        "amount": 49300,
+        "coin": "MXN",
+        "available": 18
+    }
+]
